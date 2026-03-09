@@ -8,7 +8,7 @@ if (header) {
 
 // ===== Mobile nav toggle =====
 const toggle = document.querySelector('.nav-toggle');
-const mobileMenu = document.querySelector('.nav-mobile-menu');
+const mobileMenu = document.querySelector('.mobile-menu');
 
 if (toggle && mobileMenu) {
   toggle.addEventListener('click', () => {
@@ -27,20 +27,27 @@ if (toggle && mobileMenu) {
   });
 }
 
-// ===== Contact form submission (demo) =====
-const form = document.querySelector('.contact-form');
-if (form) {
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const btn = form.querySelector('button[type="submit"]');
-    btn.textContent = 'Message Sent!';
-    btn.disabled = true;
-    btn.style.opacity = '0.7';
-    setTimeout(() => {
-      btn.textContent = 'Send Message';
-      btn.disabled = false;
-      btn.style.opacity = '';
-      form.reset();
-    }, 3000);
+// ===== Desktop dropdown toggle =====
+const dropdown = document.querySelector('.nav-dropdown');
+const dropdownToggle = document.querySelector('.nav-dropdown-toggle');
+
+if (dropdown && dropdownToggle) {
+  dropdownToggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isOpen = dropdown.classList.toggle('open');
+    dropdownToggle.setAttribute('aria-expanded', String(isOpen));
   });
+
+  document.addEventListener('click', (e) => {
+    if (!dropdown.contains(e.target)) {
+      dropdown.classList.remove('open');
+      dropdownToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+}
+
+// ===== Footer year =====
+const yearEl = document.getElementById('year');
+if (yearEl) {
+  yearEl.textContent = String(new Date().getFullYear());
 }
