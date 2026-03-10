@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><rect width='24' height='24' rx='4' fill='%231a3a5c'/><path d='M12 3v18M7 8h10' stroke='%23c8a96e' stroke-width='2' stroke-linecap='round'/></svg>" />
 </head>
 <body>
   <header class="site-header" role="banner">
@@ -17,21 +18,36 @@
         <span class="brand-mark" aria-hidden="true">✚</span>
         <span>Everlasting Hope Church</span>
       </a>
+
       <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-menu">
         <span></span><span></span><span></span>
       </button>
+
       <nav class="site-nav" aria-label="Primary">
         <a href="about.html">About</a>
+        <a href="index.html#events">Events</a>
         <a href="news.html">News</a>
-        <a href="rootedlife.html">RootedLife</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+            Technology Ministry
+          </button>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="index.html#technology-ministry" role="menuitem">Technology Ministry</a>
+            <a href="rootedlife.html" role="menuitem">RootedLife</a>
+          </div>
+        </div>
         <a href="https://www.youtube.com/@everlastinghopechurch" target="_blank" rel="noopener">Sermons</a>
+        <a href="https://everlastinghopechurch.org/give" target="_blank" rel="noopener">Give</a>
       </nav>
     </div>
     <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
       <a href="about.html">About</a>
+      <a href="index.html#events">Events</a>
       <a href="news.html">News</a>
+      <a href="technology-ministry.html">Technology Ministry</a>
       <a href="rootedlife.html">RootedLife</a>
       <a href="https://www.youtube.com/@everlastinghopechurch" target="_blank" rel="noopener">Sermons</a>
+      <a href="https://everlastinghopechurch.org/give" target="_blank" rel="noopener">Give</a>
     </nav>
   </header>
 
@@ -45,28 +61,37 @@
     </section>
 
     <section class="section">
-      <div class="container">
-        <div class="card">
+      <div class="container legal-content">
+
+        <div class="legal-section">
           <h3>Acceptance of Terms</h3>
           <p>By downloading, installing, or using the RootedLife mobile application (the App), you agree to be bound by these Terms of Service. If you do not agree, do not use the App.</p>
+        </div>
 
+        <div class="legal-section">
           <h3>Description of Service</h3>
           <p>RootedLife is a wellness application that helps users track physical health, nutrition, and spiritual growth. The App can integrate with Apple Health and other services.</p>
+        </div>
 
+        <div class="legal-section">
           <h3>User Responsibilities</h3>
           <ul>
             <li>Provide accurate and truthful information</li>
             <li>Use the App only for lawful purposes</li>
             <li>Maintain account confidentiality and report unauthorized access</li>
           </ul>
+        </div>
 
+        <div class="legal-section">
           <h3>Health Disclaimer</h3>
           <ul>
             <li>The App is for informational and tracking purposes only</li>
             <li>Always consult qualified healthcare professionals for medical advice</li>
             <li>Do not rely on the App for emergency medical situations</li>
           </ul>
+        </div>
 
+        <div class="legal-section">
           <h3>Permitted Uses</h3>
           <ul>
             <li>Track personal health and wellness data</li>
@@ -74,7 +99,9 @@
             <li>Access educational content and features</li>
             <li>Sync data with Apple Health (with permission)</li>
           </ul>
+        </div>
 
+        <div class="legal-section">
           <h3>Prohibited Uses</h3>
           <ul>
             <li>Illegal or unauthorized use</li>
@@ -82,34 +109,53 @@
             <li>Reverse engineering or disassembly</li>
             <li>Uploading malicious code</li>
           </ul>
+        </div>
 
+        <div class="legal-section">
           <h3>Intellectual Property</h3>
           <p>The App and content are owned by RootedLife and protected by law. You retain ownership of your personal data and may delete it at any time.</p>
+        </div>
 
+        <div class="legal-section">
           <h3>Privacy and Data</h3>
-          <p>Your use of the App is also governed by our Privacy Policy.</p>
+          <p>Your use of the App is also governed by our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+        </div>
 
+        <div class="legal-section">
           <h3>Third-Party Services</h3>
           <p>The App may integrate with Apple Health, FatSecret, and Firebase. Your use of those services is subject to their terms and policies.</p>
+        </div>
 
+        <div class="legal-section">
           <h3>Disclaimers and Limitation of Liability</h3>
           <p>We strive for reliable and accurate service but cannot guarantee uninterrupted availability or error-free content. To the maximum extent permitted by law, liability is limited as described in the full terms.</p>
+        </div>
 
+        <div class="legal-section">
           <h3>Termination</h3>
           <p>You may stop using the App at any time. We may terminate access for Terms violations or service changes.</p>
+        </div>
 
+        <div class="legal-section">
           <h3>Changes to Terms</h3>
           <p>We may update these Terms by posting updates in the App and revising the Effective Date. Continued use indicates acceptance of the updated Terms.</p>
+        </div>
 
+        <div class="legal-section">
           <h3>Governing Law</h3>
           <p>These Terms are governed by the laws of Tennessee, United States. Disputes are resolved in Knox County, Tennessee.</p>
-
-          <h3>Contact Information</h3>
-          <p>Email: rootedlife@everlastinghopechurch.org</p>
-
-          <h3>Entire Agreement</h3>
-          <p>These Terms, together with our Privacy Policy, constitute the entire agreement regarding your use of the App.</p>
         </div>
+
+        <div class="legal-section">
+          <h3>Contact Information</h3>
+          <p>Email: <a href="mailto:rootedlife@everlastinghopechurch.org">rootedlife@everlastinghopechurch.org</a></p>
+        </div>
+
+        <div class="legal-section">
+          <h3>Entire Agreement</h3>
+          <p>These Terms, together with our <a href="privacy-policy.html">Privacy Policy</a>, constitute the entire agreement regarding your use of the App.</p>
+        </div>
+
       </div>
     </section>
   </main>
@@ -126,6 +172,8 @@
         <a href="rootedlife.html">RootedLife</a>
         <a href="privacy-policy.html">Privacy Policy</a>
         <a href="terms-of-service.html">Terms of Service</a>
+        <a href="https://www.youtube.com/@everlastinghopechurch" target="_blank" rel="noopener">Sermons</a>
+        <a href="https://everlastinghopechurch.org/give" target="_blank" rel="noopener">Give</a>
       </nav>
     </div>
     <p class="copyright">© <span id="year">2026</span> Everlasting Hope Church. All Rights Reserved.</p>
