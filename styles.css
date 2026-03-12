@@ -151,6 +151,13 @@ p { max-width: 72ch; }
   white-space: nowrap;
 }
 
+.brand-logo {
+  height: 32px;
+  width: auto;
+  display: block;
+  flex-shrink: 0;
+}
+
 .brand-mark {
   width: 32px;
   height: 32px;
@@ -177,6 +184,7 @@ p { max-width: 72ch; }
   padding: .25rem 0;
   position: relative;
   font-weight: 500;
+  transition: color var(--transition), background var(--transition);
 }
 
 .site-nav > a::after {
